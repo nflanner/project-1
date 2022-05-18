@@ -17,6 +17,81 @@
   <!-- Roulette and selection div (top half) -->
   <section class="container">
     <div class="row">
+      <!-- Top right section -->
+        <div class="col-4 border p-3 m-3">
+          <div class="card">
+            <div class="card-header">
+              Begin Roulette Here
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Can't decide what to watch?</h5>
+              <p class="card-text">
+                You don't need to waste time endlessly scrolling for movies, just let us handle it!
+                Using your desired genre, minimum IMDb and Reelgood score, we will find a movie for you.
+                Now you can spend more time watching movies and less time searching! 🥳🥳🥳
+              </p>
+              <div class="input-group mb-3">
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Genre</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="input-group mb-3">
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>IMDb Score</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="input-group mb-3">
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Reelgood Score</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <button type="button" class="btn btn-success btn-lg btn-block">Start Roulette</button>
+            </div>
+          </div>
+        </div>
+        <!-- Top left section -->
+        <div class="col-7 border p-3 m-3">
+          <div class="card my-auto">
+            <div class="card-header">
+              Your Roulette Selection:
+            </div>
+            <div class="card-body container-fluid">
+              <div class="row">
+                <div class="col-5 border p-3 my-auto">
+                  <img src= "https://unsplash.it/230/300" />
+                </div>
+                <div class="col-5 border p-3 m-3 h-500">
+                  <div class="card movie-info">
+                    <div class="card-header">
+                      Movie Description
+                    </div>
+                    <div class="scrollable m-3">
+                        <p class="card-text">
+                        This is where the short version of the movie decription will go.
+                        Blah blah blah blah blah blah blah blah blah blah blah blah blah.
+                        Blah blah blah blah blah blah blah blah blah blah blah blah blah.
+                        Blah blah blah blah blah blah blah blah blah blah blah blah blah.
+                        Blah blah blah blah blah blah blah blah blah blah blah blah blah.
+                        Blah blah blah blah blah blah blah blah blah blah blah blah blah.
+                      </p>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-lg btn-block">See Additional Info.</button>
+                    <button type="button" class="btn btn-danger btn-lg btn-block">Already Seen?</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
   </section>
 
