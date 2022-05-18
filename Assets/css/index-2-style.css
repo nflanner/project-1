@@ -1,0 +1,10 @@
+body {
+  text-align: center;
+}
+header {
+    background-color: rgb(93, 125, 126);
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 6rem;
+    justify-content: center;
+}
