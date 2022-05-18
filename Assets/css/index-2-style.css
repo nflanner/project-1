@@ -1,0 +1,12 @@
+body {
+  text-align: center;
+}
+.col-12 {
+    width:100%;
+    height: auto;
+
+
+}
+#info {
+    display: inline;
+}
