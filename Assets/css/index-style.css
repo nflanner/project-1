@@ -6,3 +6,8 @@
     overflow-y: auto;
     height: 100%;
   }
+
+  #movie-img {
+      height:410px;
+      width: 200px !important;
+  }
