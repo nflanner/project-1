@@ -12,13 +12,18 @@
 </head>
 
 <body>
-  <header></header>
+    <nav class="navbar navbar-light">
+      <a class="navbar-brand" href="#">
+        <img id="header" src="./Assets/images/rouletteWheel.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+        Movie Roulette
+      </a>
+    </nav>
 
   <!-- Roulette and selection div (top half) -->
   <section class="container">
     <div class="row">
       <!-- Top right section -->
-        <div class="col-4 border p-3 m-3">
+        <div class="col-4 border p-3 m-3 secondary">
           <div class="card">
             <div class="card-header">
               Begin Roulette Here
@@ -26,9 +31,16 @@
             <div class="card-body">
               <h5 class="card-title">Can't decide what to watch?</h5>
               <p class="card-text">
-                You don't need to waste time endlessly scrolling for movies, just let us handle it!
-                Using your desired genre, minimum IMDb and Reelgood score, we will find a movie for you.
-                Now you can spend more time watching movies and less time searching! 🥳🥳🥳
+                You don't need to waste any more time endlessly scrolling for which movie to watch!
+                All you need to do is click the 'Genre' dropdown, select which genre you would like
+                to watch, then click 'Start Roulette'. Our Movie Roulette algorithm will work it's
+                magic and randomly select which movie you should watch...
+              </p>
+              <p class="card-text">
+                Now you can spend more time watching movies and less time searching!
+              </p>
+              <p class="card-text">
+                🥳🍿🥳🍿🥳🍿🥳🍿🥳🍿🥳🍿🥳🍿
               </p>
               <div class="input-group mb-3">
                 <select class="custom-select" id="genre">
@@ -42,36 +54,22 @@
                   <option value="878">Science Fiction</option>
                 </select>
               </div>
-              <div class="input-group mb-3">
-                <select class="custom-select" id="imdb">
-                  <option selected>IMDb Score</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
-              <div class="input-group mb-3">
-                <select class="custom-select" id="reel">
-                  <option selected>Reelgood Score</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
               <button type="button" class="btn btn-success btn-lg btn-block" id="start">Start Roulette</button>
             </div>
           </div>
         </div>
         <!-- Top left section -->
         <div class="col-7 border p-3 m-3">
-          <div class="card my-auto">
+          <div class="card my-auto h-100">
             <div class="card-header">
               Your Roulette Selection:
             </div>
             <div class="card-body container-fluid">
               <div class="row">
-                <div class="col-6 border p-3 my-auto" id="movie-img"></div>
-                <div class="col-5 border p-3 m-3 h-500">
+                <div class="col-6 border p-3 m-2 my-auto" id="img-div">
+                  <img class="h-100 w-100" id="img-el" src="./Assets/images/rouletteWheel.jpg">
+                </div>
+                <div class="col-5 border p-3 m-2 h-100">
                   <div class="card movie-info">
                     <div class="card-header">
                       Movie Description

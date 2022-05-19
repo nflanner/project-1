@@ -4,7 +4,7 @@ var reelScoreEl = document.querySelector('#reel');
 var startRouletteEl = document.getElementById('start');
 var additionalEl = document.querySelector('#additional');
 var movieDescEl = document.querySelector('#movie-desc');
-var movieImgEl = document.querySelector('#movie-img');
+var movieImgEl = document.querySelector('#img-el');
 
 var genres = ['Action', 'Comedy', 'Drama', 'Family', 'Horror', 'Romance', 'Science-Fiction'];
 var selectionTitle = '';
@@ -32,7 +32,7 @@ var selectionTitle = '';
 function handleStart(event) {
     event.preventDefault();
     movieDescEl.textContent = '';
-    movieImgEl.removeChild()
+    movieImgEl.setAttribute('src',"./Assets/images/rouletteWheel.jpg");
     // get genre
     var genreInput = genreEl.value;
     if (genreInput == 'Genre') {
@@ -86,10 +86,7 @@ function randomNum(max) {
 
 function hydrate(movie) {
     movieDescEl.textContent = movie.overview;
-    var image = document.createElement('img');
-    image.setAttribute('src', movie.poster_path);
-    image.setAttribute('class', 'h-100 w-100');
-    movieImgEl.appendChild(image);
+    movieImgEl.setAttribute('src', movie.poster_path);
 }
 
 startRouletteEl.addEventListener("click", handleStart);
