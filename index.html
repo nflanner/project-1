@@ -8,24 +8,25 @@
   <meta name="Description" content="Enter your description here" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="./Assets/css/index-style.css">
-  <title>Netflix Roulette</title>
+  <title>Movie Roulette</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar navbar-light">
-      <a class="navbar-brand" href="#">
-        <img id="header" src="./Assets/images/rouletteWheel.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
-        Movie Roulette
-      </a>
+    <nav class="navbar navbar-light navbar-default">
+      <img id="header" src="./Assets/images/rouletteWheel.jpg" width="50" height="50" class="d-inline-block align-top" alt="">
+      Movie Roulette
     </nav>
 
   <!-- Roulette and selection div (top half) -->
   <section class="container">
     <div class="row">
-      <!-- Top right section -->
+      <!-- Top left section -->
         <div class="col-4 border p-3 m-3 secondary">
-          <div class="card">
-            <div class="card-header">
+          <div class="card h-100">
+            <div class="card-header third">
               Begin Roulette Here
             </div>
             <div class="card-body">
@@ -58,10 +59,10 @@
             </div>
           </div>
         </div>
-        <!-- Top left section -->
-        <div class="col-7 border p-3 m-3">
+        <!-- Top right section -->
+        <div class="col-7 border p-3 m-3 secondary">
           <div class="card my-auto h-100">
-            <div class="card-header">
+            <div class="card-header third">
               Your Roulette Selection:
             </div>
             <div class="card-body container-fluid">
@@ -70,8 +71,8 @@
                   <img class="h-100 w-100" id="img-el" src="./Assets/images/rouletteWheel.jpg">
                 </div>
                 <div class="col-5 border p-3 m-2 h-100">
-                  <div class="card movie-info">
-                    <div class="card-header">
+                  <div class="card movie-info bg-dark">
+                    <div class="card-header third">
                       Movie Description
                     </div>
                     <div class="scrollable m-3">
