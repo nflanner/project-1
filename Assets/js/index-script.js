@@ -3,6 +3,8 @@ var imdbScoreEl = document.querySelector('#imdb');
 var reelScoreEl = document.querySelector('#reel');
 var startRouletteEl = document.getElementById('start');
 var additionalEl = document.querySelector('#additional');
+var movieDescEl = document.querySelector('#movie-desc');
+var movieImgEl = document.querySelector('#img-el');
 
 var genres = ['Action', 'Comedy', 'Drama', 'Family', 'Horror', 'Romance', 'Science-Fiction'];
 var selectionTitle = '';
@@ -29,6 +31,8 @@ var selectionTitle = '';
 // start the roulette
 function handleStart(event) {
     event.preventDefault();
+    movieDescEl.textContent = '';
+    movieImgEl.setAttribute('src',"./Assets/images/rouletteWheel.jpg");
     // get genre
     var genreInput = genreEl.value;
     if (genreInput == 'Genre') {
@@ -68,6 +72,9 @@ function getMovieInfo(genre) {
             var movieSelection = data.results[movieSelectionNum];
             selectionTitle = movieSelection.title;
             console.log(selectionTitle);
+            console.log(movieSelection);
+
+            hydrate(movieSelection);
         })
         .catch(err => console.error(err));
 }
@@ -75,6 +82,11 @@ function getMovieInfo(genre) {
 // rand number from 0 to max
 function randomNum(max) {
     return Math.floor(Math.random() * (max + 1));
+}
+
+function hydrate(movie) {
+    movieDescEl.textContent = movie.overview;
+    movieImgEl.setAttribute('src', movie.poster_path);
 }
 
 startRouletteEl.addEventListener("click", handleStart);

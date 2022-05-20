@@ -1,10 +1,61 @@
-body {
-  text-align: center;
+:root {
+    --wood: #651403;
+    --gold: rgba(140, 114, 15, 0.73);
+    --green: rgba(48, 81, 42, 0.62);
+    --black: #12211a;
 }
-header {
-    background-color: rgb(93, 125, 126);
-    color:black;
-    font-family: Arial, Helvetica, sans-serif;
+
+body {
+    text-align: center;
+    background-color: var(--green);
+    border-color: var(--gold) !important;
+    border-width: 5px;
+    color: white;
+}
+nav {
+    background-color: var(--black) !important;
     height: 6rem;
     justify-content: center;
+    font-family: 'Fredoka One', cursive;
+    color: white !important;
+    font-size: 50px;
+}
+
+.secondary {
+    background-color: var(--gold);
+    border-radius: 3%;
+}
+
+.third {
+    background-color: var(--black);
+}
+
+.card {
+    background-color: var(--wood);
+}
+
+.card .movie-info{
+    width: 100%;
+    height: 425px;
+    border: solid;
+}
+
+.card-header {
+    font-family: 'Fredoka One', cursive;
+    color: white;
+    font-size: 20px;
+}
+
+.scrollable{
+    overflow-y: auto;
+    height: 100%;
+}
+
+#movie-img {
+    height:410px;
+    width: 200px !important;
+}
+
+#header {
+    border-radius: 100%;
 }

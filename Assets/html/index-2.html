@@ -8,31 +8,34 @@
   <meta name="Description" content="Enter your description here" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="./../css/index-2-style.css">
-
-  <title>Netflix Roulette</title>
+  <title>Movie Roulette</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <h1>Netflix Roulette</h1>
-  </header>
+  <nav class="navbar navbar-light navbar-default">
+    <img id="header" src="./../images/rouletteWheel.jpg" width="50" height="50" class="d-inline-block align-top" alt="">
+    Movie Roulette
+  </nav>
 
   <!-- conatiner for full page -->
   <section class="container text-center">
     <div class="row">
-      <div class="col-12 border p-3 m-3">
+      <div class="col-12 border p-3 m-3 secondary">
         <div class="card my-auto">
-          <div class="card-header">
+          <div class="card-header third">
             Additional Info:
           </div>
           <div class="card-body container-fluid">
-            <div class="row">
-              <div class="col-5 border p-3 m-3 h-500">
-                <img src= "https://unsplash.it/230/300" />
+            <div class="row justify-content-center">
+              <div class="col-4 border p-3 m-2 my-auto" id="img-div">
+                <img class="h-100 w-100" id="img-el" src="./../images/rouletteWheel.jpg">
               </div>
-              <div class="col-5 border p-3 m-3 h-500">
+              <div class="col-6 border p-3 m-3 h-500">
                 <div class="card movie-info">
-                  <div class="card-header">
+                  <div class="card-header third">
                     Movie Description
                   </div>
                   <div class="scrollable m-3">
