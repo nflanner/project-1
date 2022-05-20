@@ -92,6 +92,53 @@
   <!-- Ratings and list div (bottom half) -->
   <section class="container">
     <div class="row">
+      <div class="col-lg-6 mb-4">
+        <div class="card">
+      
+          <div class="card-body">
+            <h5 class="card-title">Enter Previously Watched Movies</h5>
+            <p class="card-text">
+              Enter previously watched movies here to help you better judge which genres you have
+              been liking the most. This will help inform you next time you want to use the
+              movie roulette app!
+            </p>
+            <p class="card-text">
+              All movies entered will be saved locally and placed in a list to the right.
+            </p>
+      
+            <input type="text" class="form-control p-3" placeholder="Movie Title">
+      
+            <input type="text" class="form-control p-3" placeholder="Score (ex: 9.5)">
+      
+            <div class="input-group">
+              <select class="custom-select" id="genre-bottom">
+                <option selected>Genre</option>
+                <option value="28">Action</option>
+                <option value="35">Comedy</option>
+                <option value="18">Drama</option>
+                <option value="10751">Family</option>
+                <option value="27">Horror</option>
+                <option value="10749">Romance</option>
+                <option value="878">Science Fiction</option>
+              </select>
+            </div>
+      
+            <button type="button" class="btn btn-success btn-lg btn-block" id="save">Save</button>
+      
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mb-4">
+        <div class="card">
+      
+          <div class="card-body">
+            <h5 class="card-title">List of Previous Movies</h5>
+      
+            <ul class="list-group" id="saved-list"></ul>
+          </div>
+        </div>
+      </div>
+      
     </div>
   </section>
 
