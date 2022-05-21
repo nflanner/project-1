@@ -160,11 +160,13 @@ function pullStorage(){
 
     var saveString=localStorage.getItem("saveObject")
     var parsedSave=JSON.parse(saveString)
-    for(var i=0;i<parsedSave["title"].length;i++){
-        titleList.push(parsedSave["title"][i])
-        scoreList.push(parsedSave["score"][i])
-        genreList.push(parsedSave["genre"][i])
+    if (parsedSave) {
+        for (var i = 0; i < parsedSave["title"].length; i++) {
+            titleList.push(parsedSave["title"][i])
+            scoreList.push(parsedSave["score"][i])
+            genreList.push(parsedSave["genre"][i])
 
+        }
     }
 }
 
