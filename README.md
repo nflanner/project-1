@@ -36,7 +36,7 @@ GIVEN a roulette dashboard
 WHEN I slect a genre of movie and select 'Start Roulette'
 THEN I am presented with a movie image and short plot
 WHEN I select 'Additional Info'
-THEN I am presented with a new page that displays tha moive poster and various additiona information
+THEN I am presented with a new page that displays the movie poster and various additional information
 WHEN I am on the main page and I enter a movie title, genre, and personal rating
 THEN My inputs are saved and stored in a list that I can reference 
 ```
